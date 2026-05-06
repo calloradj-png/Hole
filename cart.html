@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - SuperMarket</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <i class="fa-solid fa-store"></i> SuperMarket
+                </a>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Искать товары...">
+                    <button type="submit"><i class="fa-solid fa-search"></i></button>
+                </div>
+
+                <nav class="nav">
+                    <a href="#" class="nav-link"><i class="fa-regular fa-user"></i> Войти</a>
+                    <a href="cart.html" class="nav-link cart-link active">
+                        <i class="fa-solid fa-cart-shopping"></i> Корзина
+                        <span class="cart-badge">3</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <div class="container">
+            <h1 class="page-title">Корзина</h1>
+
+            <div class="cart-layout">
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <div class="cart-header-product">Товар</div>
+                        <div class="cart-header-price">Цена</div>
+                        <div class="cart-header-quantity">Количество</div>
+                        <div class="cart-header-total">Сумма</div>
+                        <div class="cart-header-action"></div>
+                    </div>
+
+                    <!-- Cart Item 1 -->
+                    <div class="cart-item">
+                        <div class="cart-item-product">
+                            <img src="https://via.placeholder.com/100x100?text=Smartphone" alt="Smartphone" class="cart-item-image">
+                            <div class="cart-item-info">
+                                <h3 class="cart-item-title"><a href="product.html">Смартфон Samsung Galaxy S23 Ultra</a></h3>
+                                <p class="cart-item-variant">Цвет: Черный, Память: 256 ГБ</p>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <span class="current-price">95 000 ₽</span>
+                        </div>
+                        <div class="cart-item-quantity">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" value="1" min="1" max="10">
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-total">
+                            <strong>95 000 ₽</strong>
+                        </div>
+                        <div class="cart-item-action">
+                            <button class="btn-remove" title="Удалить"><i class="fa-regular fa-trash-can"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 2 -->
+                    <div class="cart-item">
+                        <div class="cart-item-product">
+                            <img src="https://via.placeholder.com/100x100?text=Headphones" alt="Headphones" class="cart-item-image">
+                            <div class="cart-item-info">
+                                <h3 class="cart-item-title"><a href="#">Беспроводные наушники Sony</a></h3>
+                                <p class="cart-item-variant">Цвет: Серебристый</p>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <span class="current-price">25 000 ₽</span>
+                        </div>
+                        <div class="cart-item-quantity">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" value="1" min="1" max="10">
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-total">
+                            <strong>25 000 ₽</strong>
+                        </div>
+                        <div class="cart-item-action">
+                            <button class="btn-remove" title="Удалить"><i class="fa-regular fa-trash-can"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Cart Item 3 -->
+                    <div class="cart-item">
+                        <div class="cart-item-product">
+                            <img src="https://via.placeholder.com/100x100?text=Case" alt="Case" class="cart-item-image">
+                            <div class="cart-item-info">
+                                <h3 class="cart-item-title"><a href="#">Чехол для Galaxy S23 Ultra</a></h3>
+                                <p class="cart-item-variant">Материал: Силикон, Цвет: Прозрачный</p>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <span class="current-price">1 500 ₽</span>
+                        </div>
+                        <div class="cart-item-quantity">
+                            <div class="quantity-selector">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" value="2" min="1" max="10">
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-total">
+                            <strong>3 000 ₽</strong>
+                        </div>
+                        <div class="cart-item-action">
+                            <button class="btn-remove" title="Удалить"><i class="fa-regular fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-summary">
+                    <h3>Детали заказа</h3>
+
+                    <div class="summary-row">
+                        <span>Товары (3)</span>
+                        <span>123 000 ₽</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Скидка</span>
+                        <span class="text-green">-15 000 ₽</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Доставка</span>
+                        <span>Бесплатно</span>
+                    </div>
+
+                    <div class="promo-code">
+                        <input type="text" placeholder="Промокод">
+                        <button class="btn btn-secondary">Применить</button>
+                    </div>
+
+                    <div class="summary-total">
+                        <span>Итого</span>
+                        <span>123 000 ₽</span>
+                    </div>
+
+                    <button class="btn btn-primary btn-block btn-checkout">Перейти к оформлению</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>О нас</h3>
+                    <p>SuperMarket - ваш надежный маркетплейс для покупок онлайн. Мы предлагаем лучшие товары по доступным ценам с гарантией качества.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Покупателям</h3>
+                    <ul>
+                        <li><a href="#">Как сделать заказ</a></li>
+                        <li><a href="#">Способы оплаты</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Возврат товара</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> 8 (800) 555-35-35</li>
+                        <li><i class="fa-solid fa-envelope"></i> support@supermarket.ru</li>
+                        <li><i class="fa-solid fa-location-dot"></i> г. Москва, ул. Примерная, 10</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SuperMarket. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

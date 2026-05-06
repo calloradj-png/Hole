@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMarket - Главная</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <i class="fa-solid fa-store"></i> SuperMarket
+                </a>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Искать товары...">
+                    <button type="submit"><i class="fa-solid fa-search"></i></button>
+                </div>
+
+                <nav class="nav">
+                    <a href="#" class="nav-link"><i class="fa-regular fa-user"></i> Войти</a>
+                    <a href="cart.html" class="nav-link cart-link">
+                        <i class="fa-solid fa-cart-shopping"></i> Корзина
+                        <span class="cart-badge">3</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Лучшие товары по отличным ценам</h1>
+                    <p>Откройте для себя тысячи товаров с быстрой доставкой и гарантией качества.</p>
+                    <a href="#products" class="btn btn-primary">За покупками</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Популярные товары</h2>
+
+                <div class="product-grid">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                        <a href="product.html">
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x300?text=Smartphone" alt="Smartphone">
+                            </div>
+                        </a>
+                        <div class="product-info">
+                            <span class="product-category">Электроника</span>
+                            <h3 class="product-title"><a href="product.html">Смартфон Galaxy S23 Ultra</a></h3>
+                            <div class="product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span>(124)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">95 000 ₽</span>
+                                <span class="old-price">110 000 ₽</span>
+                            </div>
+                            <button class="btn btn-add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                        <a href="product.html">
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x300?text=Headphones" alt="Headphones">
+                            </div>
+                        </a>
+                        <div class="product-info">
+                            <span class="product-category">Аудио</span>
+                            <h3 class="product-title"><a href="product.html">Беспроводные наушники Sony</a></h3>
+                            <div class="product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span>(86)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">25 000 ₽</span>
+                            </div>
+                            <button class="btn btn-add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                        <a href="product.html">
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x300?text=Laptop" alt="Laptop">
+                            </div>
+                        </a>
+                        <div class="product-info">
+                            <span class="product-category">Компьютеры</span>
+                            <h3 class="product-title"><a href="product.html">Ноутбук MacBook Pro 14"</a></h3>
+                            <div class="product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(312)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">180 000 ₽</span>
+                                <span class="old-price">200 000 ₽</span>
+                            </div>
+                            <button class="btn btn-add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="product-card">
+                        <a href="product.html">
+                            <div class="product-image">
+                                <img src="https://via.placeholder.com/300x300?text=SmartWatch" alt="SmartWatch">
+                            </div>
+                        </a>
+                        <div class="product-info">
+                            <span class="product-category">Аксессуары</span>
+                            <h3 class="product-title"><a href="product.html">Умные часы Apple Watch</a></h3>
+                            <div class="product-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span>(45)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">35 000 ₽</span>
+                            </div>
+                            <button class="btn btn-add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>О нас</h3>
+                    <p>SuperMarket - ваш надежный маркетплейс для покупок онлайн. Мы предлагаем лучшие товары по доступным ценам с гарантией качества.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Покупателям</h3>
+                    <ul>
+                        <li><a href="#">Как сделать заказ</a></li>
+                        <li><a href="#">Способы оплаты</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Возврат товара</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> 8 (800) 555-35-35</li>
+                        <li><i class="fa-solid fa-envelope"></i> support@supermarket.ru</li>
+                        <li><i class="fa-solid fa-location-dot"></i> г. Москва, ул. Примерная, 10</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SuperMarket. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
