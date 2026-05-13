@@ -11,7 +11,7 @@
     <header class="header">
         <div class="container">
             <div class="header-inner">
-                <a href="index.html" class="logo">
+                <a href="index.html" class="logo"><i class="fa-brands fa-apple"></i>
                     <i class="fa-solid fa-store"></i> SuperMarket
                 </a>
 
@@ -21,7 +21,7 @@
                 </div>
 
                 <nav class="nav">
-                    <a href="#" class="nav-link"><i class="fa-regular fa-user"></i> Войти</a>
+                    <a href="login.html" class="nav-link"><i class="fa-regular fa-user"></i> Войти</a>
                     <a href="cart.html" class="nav-link cart-link">
                         <i class="fa-solid fa-cart-shopping"></i> Корзина
                         <span class="cart-badge">3</span>
@@ -31,7 +31,7 @@
         </div>
     </header>
 
-    <main class="product-page">
+    <main class="product-page fade-in">
         <div class="container">
             <div class="breadcrumb">
                 <a href="index.html">Главная</a> &gt;
@@ -41,7 +41,7 @@
             </div>
 
             <div class="product-details">
-                <div class="product-gallery">
+                <div class="product-gallery slide-up">
                     <div class="main-image">
                         <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&q=80&w=800" alt="Смартфон Pro Max">
                     </div>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
 
-                <div class="product-info-detail">
+                <div class="product-info-detail slide-up" style="animation-delay: 0.1s;">
                     <h1 class="product-title-large">Смартфон Pro Max 256GB Black</h1>
 
                     <div class="product-rating-large">
@@ -129,33 +129,62 @@
                 </div>
             </div>
 
-            <div class="product-description">
-                <h2>Описание</h2>
-                <p>Встречайте Pro Max — смартфон, который меняет представление о возможностях мобильных устройств. Оснащенный самым мощным процессором, революционной системой камер и невероятным дисплеем, он создан для тех, кто не согласен на компромиссы.</p>
+            <div class="tabs-container slide-up" style="animation-delay: 0.2s;">
+                <input type="radio" name="product-tabs" id="tab1" class="tab-radio" checked>
+                <input type="radio" name="product-tabs" id="tab2" class="tab-radio">
+                <input type="radio" name="product-tabs" id="tab3" class="tab-radio">
 
-                <h3>Характеристики</h3>
-                <table class="specs-table">
-                    <tr>
-                        <td>Экран</td>
-                        <td>6.7" Super Retina XDR OLED 120 Гц</td>
-                    </tr>
-                    <tr>
-                        <td>Процессор</td>
-                        <td>A16 Bionic</td>
-                    </tr>
-                    <tr>
-                        <td>Память</td>
-                        <td>Встроенная 256 ГБ</td>
-                    </tr>
-                    <tr>
-                        <td>Камеры</td>
-                        <td>Основная 48+12+12 МП, Фронтальная 12 МП</td>
-                    </tr>
-                    <tr>
-                        <td>Материал</td>
-                        <td>Хирургическая нержавеющая сталь и стекло</td>
-                    </tr>
-                </table>
+                <div class="tabs-nav">
+                    <label for="tab1" class="tab-label">Описание</label>
+                    <label for="tab2" class="tab-label">Характеристики</label>
+                    <label for="tab3" class="tab-label">Отзывы (124)</label>
+                </div>
+
+                <div class="tab-content-wrapper">
+                    <div id="content1" class="tab-content">
+                        <h2>Обзор продукта</h2>
+                        <p>Встречайте Pro Max — смартфон, который меняет представление о возможностях мобильных устройств. Оснащенный самым мощным процессором, революционной системой камер и невероятным дисплеем, он создан для тех, кто не согласен на компромиссы.</p>
+                        <p>Новый дизайн с плоскими гранями не только стильно выглядит, но и надежно лежит в руке. А благодаря увеличенной емкости аккумулятора, вы сможете наслаждаться контентом еще дольше.</p>
+                    </div>
+
+                    <div id="content2" class="tab-content">
+                        <table class="specs-table">
+                            <tr>
+                                <td>Экран</td>
+                                <td>6.7" Super Retina XDR OLED 120 Гц</td>
+                            </tr>
+                            <tr>
+                                <td>Процессор</td>
+                                <td>A16 Bionic</td>
+                            </tr>
+                            <tr>
+                                <td>Память</td>
+                                <td>Встроенная 256 ГБ</td>
+                            </tr>
+                            <tr>
+                                <td>Камеры</td>
+                                <td>Основная 48+12+12 МП, Фронтальная 12 МП</td>
+                            </tr>
+                            <tr>
+                                <td>Материал</td>
+                                <td>Хирургическая нержавеющая сталь и стекло</td>
+                            </tr>
+                            <tr>
+                                <td>Защита от воды</td>
+                                <td>IP68</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="content3" class="tab-content">
+                        <div class="reviews-placeholder text-center py-20" style="padding: 40px 0; color: #86868b;">
+                            <i class="fa-regular fa-comments" style="font-size: 3rem; margin-bottom: 15px; display: block;"></i>
+                            <h3>Отзывы покупателей</h3>
+                            <p>Оставьте первый отзыв об этом товаре!</p>
+                            <button class="btn btn-outline" style="margin-top: 15px;">Написать отзыв</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

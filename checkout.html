@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа - SuperMarket</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <i class="fa-brands fa-apple"></i> SuperMarket
+                </a>
+
+                <div class="checkout-steps">
+                    <span class="step active">1. Доставка</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span class="step">2. Оплата</span>
+                </div>
+
+                <nav class="nav">
+                    <a href="cart.html" class="nav-link"><i class="fa-solid fa-arrow-left"></i> В корзину</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="checkout-page fade-in">
+        <div class="container">
+            <h1 class="page-title text-center">Оформление заказа</h1>
+
+            <div class="checkout-layout">
+                <div class="checkout-form-section slide-up">
+                    <div class="checkout-card">
+                        <h2 class="checkout-card-title">Контактные данные</h2>
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="firstName">Имя</label>
+                                <input type="text" id="firstName" placeholder="Иван" required>
+                            </div>
+                            <div class="form-group half">
+                                <label for="lastName">Фамилия</label>
+                                <input type="text" id="lastName" placeholder="Иванов" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" placeholder="+7 (999) 000-00-00" required>
+                            </div>
+                            <div class="form-group half">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" placeholder="example@apple.com" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="checkout-card">
+                        <h2 class="checkout-card-title">Доставка</h2>
+                        <div class="delivery-methods">
+                            <label class="delivery-method">
+                                <input type="radio" name="delivery" checked>
+                                <div class="method-info">
+                                    <span class="method-title">Курьером</span>
+                                    <span class="method-desc">Завтра, 0 ₽</span>
+                                </div>
+                            </label>
+                            <label class="delivery-method">
+                                <input type="radio" name="delivery">
+                                <div class="method-info">
+                                    <span class="method-title">Самовывоз</span>
+                                    <span class="method-desc">Сегодня, 0 ₽</span>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="form-group mt-20">
+                            <label for="address">Адрес доставки</label>
+                            <input type="text" id="address" placeholder="Город, улица, дом, квартира" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Комментарий курьеру (необязательно)</label>
+                            <textarea id="comment" rows="3" placeholder="Например: позвонить за час"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="checkout-card">
+                        <h2 class="checkout-card-title">Оплата</h2>
+                        <div class="payment-methods">
+                            <label class="payment-method">
+                                <input type="radio" name="payment" checked>
+                                <div class="method-info">
+                                    <i class="fa-brands fa-apple-pay"></i>
+                                    <span class="method-title">Apple Pay</span>
+                                </div>
+                            </label>
+                            <label class="payment-method">
+                                <input type="radio" name="payment">
+                                <div class="method-info">
+                                    <i class="fa-regular fa-credit-card"></i>
+                                    <span class="method-title">Картой онлайн</span>
+                                </div>
+                            </label>
+                            <label class="payment-method">
+                                <input type="radio" name="payment">
+                                <div class="method-info">
+                                    <i class="fa-solid fa-money-bill"></i>
+                                    <span class="method-title">При получении</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-summary-section slide-up" style="animation-delay: 0.1s;">
+                    <div class="cart-summary sticky-summary">
+                        <h3>Ваш заказ</h3>
+
+                        <div class="checkout-mini-cart">
+                            <div class="mini-cart-item">
+                                <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&q=80&w=100" alt="Smartphone">
+                                <div class="mini-cart-info">
+                                    <h4>Смартфон Pro Max</h4>
+                                    <span>1 шт.</span>
+                                </div>
+                                <div class="mini-cart-price">95 000 ₽</div>
+                            </div>
+                            <div class="mini-cart-item">
+                                <img src="https://images.unsplash.com/photo-1606220838315-056192d5e927?auto=format&fit=crop&q=80&w=100" alt="Headphones">
+                                <div class="mini-cart-info">
+                                    <h4>Беспроводные наушники Pods Max</h4>
+                                    <span>1 шт.</span>
+                                </div>
+                                <div class="mini-cart-price">25 000 ₽</div>
+                            </div>
+                             <div class="mini-cart-item">
+                                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&q=80&w=100" alt="Case">
+                                <div class="mini-cart-info">
+                                    <h4>Чехол для Pro Max</h4>
+                                    <span>2 шт.</span>
+                                </div>
+                                <div class="mini-cart-price">3 000 ₽</div>
+                            </div>
+                        </div>
+
+                        <div class="summary-row mt-20">
+                            <span>Товары (4)</span>
+                            <span>123 000 ₽</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Скидка</span>
+                            <span class="text-green">-15 000 ₽</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Доставка</span>
+                            <span>Бесплатно</span>
+                        </div>
+
+                        <div class="summary-total mt-20 border-top pt-20">
+                            <span>Итого к оплате</span>
+                            <span>108 000 ₽</span>
+                        </div>
+
+                        <button class="btn btn-primary btn-block btn-checkout">Оплатить заказ</button>
+                        <p class="terms-text text-center mt-10">Нажимая кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom border-none pt-0">
+                <p>&copy; 2024 SuperMarket. Безопасные платежи.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

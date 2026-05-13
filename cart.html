@@ -11,7 +11,7 @@
     <header class="header">
         <div class="container">
             <div class="header-inner">
-                <a href="index.html" class="logo">
+                <a href="index.html" class="logo"><i class="fa-brands fa-apple"></i>
                     <i class="fa-solid fa-store"></i> SuperMarket
                 </a>
 
@@ -21,7 +21,7 @@
                 </div>
 
                 <nav class="nav">
-                    <a href="#" class="nav-link"><i class="fa-regular fa-user"></i> Войти</a>
+                    <a href="login.html" class="nav-link"><i class="fa-regular fa-user"></i> Войти</a>
                     <a href="cart.html" class="nav-link cart-link active">
                         <i class="fa-solid fa-cart-shopping"></i> Корзина
                         <span class="cart-badge">3</span>
@@ -31,7 +31,7 @@
         </div>
     </header>
 
-    <main class="cart-page">
+    <main class="cart-page fade-in">
         <div class="container">
             <h1 class="page-title">Корзина</h1>
 
@@ -153,7 +153,7 @@
                         <span>123 000 ₽</span>
                     </div>
 
-                    <button class="btn btn-primary btn-block btn-checkout">Перейти к оформлению</button>
+                    <button class="btn btn-primary btn-block btn-checkout" onclick="window.location.href='checkout.html'">Перейти к оформлению</button>
                 </div>
             </div>
         </div>
